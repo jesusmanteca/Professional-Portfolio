@@ -1,0 +1,313 @@
+:root {
+  --color1: #2A9D8F;
+  --color2: #264653;
+  --color3: #e9c46a;
+  --color4: #f4a261;
+  --color5: #e76f51;
+}
+<<<<<<< HEAD
+:root {
+  --primary-color: #fce138;
+  --secondary-color: #024e76;
+  --tertiary-color: #39a6b2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* 
+  !!!!!!!!!!!!!!!!!!!!!
+  We just told every 
+  element on the page to 
+  not have any margin or 
+  border unless we explicitly 
+  tell it to. 
+  !!!!!!!!!!!!!!!!!!!!!!*/
+
+/* Applying styles to body */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--color2);
+  }
+
+/* Applying styles to header next */
+header {
+    padding: 20px 35px;
+    background-color: var(--color3);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* box-shadow: 0 0 10px rgba(122, 122, 122, 0.596); */
+    background-image: url("../images/navbackground.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    /* A higher z-index brings the element to the front while a lower z-index pushes it to the back. */
+    z-index: 9999;
+}
+
+/* adding a hover effect over the links */
+a:hover {
+  color: var(--color5);
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  /* default flex direction is row */
+  flex-direction: row; 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+/* Applying style to the RUN BUDDY anchor, the links */
+header nav ul li a {
+  color: var(--color3);
+  text-decoration: none;
+  font-weight: lighter;
+  padding: 10px 15px;
+  font-size: 2.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: var(--color5);
+  color: var(--color3);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--color3);
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: var(--color3);
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0;
+  display: inline;
+}
+
+section {
+  padding: 60px;
+ ;
+}
+
+/*
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHH HERO SECTION HHHHHHHHHHHHHHHHHHHHHH
+ */
+
+ .hero {
+  background-image: url("../images/navbackground.jpg") ;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-CTA {
+  width: 50%;
+  text-align: center;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.5;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-CTA h2 {
+  font-style: italic;
+  font-size: 35px;
+  color: var(--color3);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* About Me */
+
+.intro {
+  margin: 10px auto;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: var(--color3);
+  /* border-bottom: 1px solid var(--tertiary-color); */
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  /* aling-items: centers the divs in the y-axis */
+  justify-content: space-between;
+}
+.intro p {
+  line-height: 1.7;
+  color: var(--color5);
+  width: 80%;
+  font-size: 20px;
+=======
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: whitesmoke;
+  top: 0;
+  position: relative;
+}
+.NavTitle {
+  float: left;
+  padding: 10px;
+  background-color: rgb(16, 146, 146);
+  font-size: xx-large;
+  color: whitesmoke;
+  font-family: 'Indie Flower', cursive;
+}
+nav {
+  max-width: 1200px;
+>>>>>>> 4b1c3b21f3202eb634c82063d4e195e3860f1dd1
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.4vw;
+}
+
+.flex-row {
+  border-right: solid;
+  padding: 20px;
+  text-align: right;
+}
+
+/* WORK SECTION */
+
+.work {
+  margin: 10px auto;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: var(--color1);
+  /* border-bottom: 1px solid var(--tertiary-color); */
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  /* aling-items: centers the divs in the y-axis */
+  justify-content: space-between;
+}
+
+.work p {
+  line-height: 1.7;
+  color: var(--color2);
+  width: 80%;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.4vw;
+}
+
+.work h2 {
+  color: var(--color3);
+}
+
+.work-row {
+  border-color: var(--color5);
+  border-right: solid var(--color3);
+  padding: 20px;
+  text-align: right;
+}
+
+.workImg {
+  width: 100%;
+  min-height: 203px;
+  display: flex;
+  padding: 15px;
+  align-items: flex-end;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.workImg h3, .workImg h4{
+  color: var(--color3);
+  background-color: var(--color2);
+  margin: 4px;
+  border: 1px solid var(--color3);
+  font-weight: lighter;
+  z-index: 9998;
+}
+
+.workImg::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(252, 225, 56, 0.3),var(--color5)) ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.workSamples:hover .workImg::after {
+  opacity: 1;
+}
+
+.workSamples {
+  padding: 5px;
+}
+
+.workSample1 {
+  background-image: url("../images/IMG_0809.JPG");
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.workSample2 {
+  background-image: url("../images/IMG_0086.JPG");
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.workSample3 {
+  background-image: url("../images/IMG_0080.JPG");
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Me */
+
+
+.contact-me {
+  margin: 10px auto;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: var(--color3);
+  /* border-bottom: 1px solid var(--tertiary-color); */
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  /* aling-items: centers the divs in the y-axis */
+  justify-content: space-between;
+}
+
+.my-info {
+    margin: 10px;
+    display: flex;
+}
+
+.my-info-container h3 {
+    margin: 5px 10px;
+    border-bottom: 4px double var(--color2);
+}
